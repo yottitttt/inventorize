@@ -1,4 +1,4 @@
-# inventorize#
+# inventorize
 研究室の物品を管理するアプリ
 
 <img width="1491" alt="スクリーンショット 2025-06-24 4 23 58" src="https://github.com/user-attachments/assets/90ab2616-9d37-4268-a529-e9e6e83d749f" />
@@ -6,20 +6,24 @@
 ## 使用技術
 
 ### フロントエンド
-- HTML,CSS,Javascript
-  
+- Typescript
+- React
+- Chakra UI
+- Vite
+
 ### バックエンド
-- Flask
+- FastAPI
 
 ### データベース
-- SQLite
+- MySQL
+
+### 開発ツール
+- Docker
+
 
 ## 機能
 - ユーザー認証機能
   - ユーザー登録
-  - ログイン / ログアウト機能
-- 入室中・退室中メンバーの表示機能
-- 研究室滞在時間のランキング機能
-- プロフィール機能
-  - ユーザー名，パスワード，プロフィール画像の変更 
-  - カレンダーに入退室時刻を表示
+  - ログイン機能
+- 研究室が所持する物品の表示機能
+- 物品の貸出・返却機能
