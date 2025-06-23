@@ -1,0 +1,7 @@
+.env
+.env.*
+
+# Python関連
+__pycache__/
+*.py[cod]
+*$py.class

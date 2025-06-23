@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+sqlalchemy==2.0.27
+pymysql==1.1.0
+python-dotenv==1.0.1
+pydantic==2.6.1
+email-validator==2.1.0
+cryptography==42.0.0
+apscheduler
+bcrypt
+python-jose
+pytz
+itsdangerous
