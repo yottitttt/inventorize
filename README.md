@@ -12,6 +12,7 @@
 - Vite
 
 ### バックエンド
+- Python
 - FastAPI
 
 ### データベース
