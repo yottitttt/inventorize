@@ -7,13 +7,13 @@ interface Transaction {
   id: number;
   name: string;
   transaction_date: string;
-  status: string;
+  // status: string;
 }
 
 interface Rental {
   id: number;
   name: string;
-  return_deadline: string;
+  // return_deadline: string;
 }
 
 interface History {
