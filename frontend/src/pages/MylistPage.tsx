@@ -7,13 +7,13 @@ interface Transaction {
   id: number;
   name: string;
   transaction_date: string;
-  // status: string;
+  status: string;
 }
 
 interface Rental {
   id: number;
   name: string;
-  // return_deadline: string;
+  return_deadline: string;
 }
 
 interface History {
@@ -165,7 +165,7 @@ const MylistPage = () => {
               columns={[
                 item.item?.name ?? "不明",
                 new Date(item.transaction_date).toLocaleDateString(),
-                item.status,
+                // item.status,
                 item.status === "request" ? (
                   <Button size="sm" bg="red.500" colorScheme="red" onClick={() => handleCancel(item.id)}>
                     キャンセル
@@ -192,7 +192,7 @@ const MylistPage = () => {
               key={rental.id}
               columns={[
                 rental.name,
-                new Date(rental.return_deadline).toLocaleDateString(),
+                // new Date(rental.return_deadline).toLocaleDateString(),
                 <Button size="sm" bg="blue.500" colorScheme="blue" onClick={() => handleReturn(rental.id)}>
                   返却
                 </Button>,
