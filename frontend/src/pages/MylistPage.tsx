@@ -155,9 +155,9 @@ const MylistPage = () => {
       <Heading size="md" mt={6} mb={1}>申請中の物品</Heading>
       {items.length === 0 && <Text mb={2}>申請中の物品はありません。</Text>}
       <Box borderWidth="1px" borderRadius="md" overflow="hidden" mb={6}>
-        <TableHeader headers={["名前", "申請日", "状態", "操作"]} />
+        <TableHeader headers={["名前", "申請日", /*"状態",*/ "操作"]} />
         {items.length === 0 ? (
-          <TableRow columns={["-", "-", "-", "-"]} />
+          <TableRow columns={["-", "-", /*"-",*/ "-"]} />
         ) : (
           items.map((item) => (
             <TableRow
@@ -183,9 +183,9 @@ const MylistPage = () => {
       <Heading size="md" mt={6} mb={1}>借用中の物品</Heading>
       {rentals.length === 0 && <Text mb={2}>借用中の物品はありません。</Text>}
       <Box borderWidth="1px" borderRadius="md" overflow="hidden" mb={6}>
-        <TableHeader headers={["名前", "返却期限", "操作"]} />
+        <TableHeader headers={["名前", /*"返却期限",*/ "操作"]} />
         {rentals.length === 0 ? (
-          <TableRow columns={["-", "-", "-"]} />
+          <TableRow columns={["-", /*"-",*/ "-"]} />
         ) : (
           rentals.map((rental) => (
             <TableRow
